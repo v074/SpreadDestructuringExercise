@@ -47,7 +47,7 @@ const moreAvengers={
     hawkeye:"Clint Barton",
     ironMan:"Tony Stark"
 };
-// 4e. Using destructuring again, create brand new variable names for each value in the avengers object. For "Natasha Romanoff" use "nat" for the variable name and for the REST of the key value pairs use "others" for the variable name.
+// 4e. Using destructuring again, create brand new variable names for each value in the moreAvengers object. For "Natasha Romanoff" use "nat" for the variable name and for the REST of the key value pairs use "others" for the variable name.
 const {blackWidow:nat,...others}=moreAvengers;
 // 4f. Using a single console log, display the values of the two new variables in terminal
 console.log(nat, others);
@@ -60,7 +60,7 @@ const bonus = {
   };
 
 //   5a. Create a const variable named "all" and use the "bonus" object as well as spread to set the value of the "all" variable to an array with numbers 1 through 9 as the items (Example: [1, 2, 3, 4, 5, 6, 7, 8, 9])
-all=[...bonus.first, ...bonus.second, ...bonus.third];
+const all=[...bonus.first, ...bonus.second, ...bonus.third];
 console.log(all);
 // 5b. Use the "bonus" object as well as destructuring to create a variable for each of the nine numbers. Use the spelled out name of each number as the variable name (Example: const one = 1, const two = 2, etc.)
 const [one, two, three]=bonus.first;
